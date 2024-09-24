@@ -574,7 +574,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	           <span>  <a href="#"><span class="icon-download"></span></a></span>
+	           <span>  <btn onclick=""downloadPDF()"><span class="icon-download"></span></btn></span>
 	          </div>
           </div>
 
@@ -620,7 +620,14 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  
+   <script>
+    function downloadPDF() {
+      const link = document.createElement('a');
+      link.href = './Raghupati Jha_portfolio.pdf'; // URL of the PDF file
+      link.download = 'yourfile.pdf'; // Name for the downloaded file
+      link.click();
+    }
+  </script>
   <script src="js/main.js"></script>
     
   </body>
