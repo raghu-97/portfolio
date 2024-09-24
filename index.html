@@ -56,7 +56,18 @@
   height: .7rem;
   background-color: #ffbd39;
 }
+ button {
+      background-color: transparent;
+      border: 2px solid #000; /* Optional: add a border */
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px; /* Optional: rounded corners */
+    }
 
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.1); /* Slight hover effect */
+    }
 
 /* Animation styles */
 #typing-animation {
@@ -399,11 +410,7 @@
 				</div>
     		</div>
 
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
+    		
     	</div>
     </section>
 
@@ -623,8 +630,8 @@
    <script>
     function downloadPDF() {
       const link = document.createElement('a');
-      link.href = 'https://github.com/raghu-97/portfolio/blob/main/Raghupati%20Jha_portfolio.pdf'; // URL of the PDF file
-      link.download = 'yourfile.pdf'; // Name for the downloaded file
+      link.href = './Raghupati Jha_portfolio.pdf'; // URL of the PDF file
+      link.download = 'Raghupati_Jha.pdf'; // Name for the downloaded file
       link.click();
     }
   </script>
